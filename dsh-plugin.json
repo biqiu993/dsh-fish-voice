@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/T-Auto/dsh-std/8a15541117cb3c13ddb8f2468308691b6051d162/packages/manifest/schema/dsh-plugin-0.15.schema.json",
+  "manifestVersion": "0.15",
+  "id": "dsh-fish-voice.local",
+  "name": "dsh-fish-voice",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "从真人聊天语料里学说话：句长、断句、口头语、结尾习惯，画像 + 原话样本注入系统提示。",
+  "facets": {
+    "host": { "entry": "lib/index.js", "apiVersion": "v1alpha1" }
+  },
+  "requires": {
+    "contracts": [{ "apiVersion": "tools.dsh/v1alpha1", "kind": "Tool" }]
+  },
+  "permissions": [],
+  "contributes": {
+    "x-display": [
+      {
+        "title": "dsh-fish-voice",
+        "description": "真人是老师：把主人平时的说话习惯统计出来，连原话样本一起注入，让她照着语感说。"
+      }
+    ]
+  }
+}

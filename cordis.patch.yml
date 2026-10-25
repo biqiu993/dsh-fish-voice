@@ -1,0 +1,14 @@
+# dsh-fish-voice 的 bundle patch
+#   insert: 往配置树里加一行 entry
+#   id:     唯一标识（用户层可按 id 覆盖 config）
+#   name:   'dsh-fish-voice' 解析到本包入口 lib/index.js
+
+- insert:
+    - id: fish-voice
+      name: 'dsh-fish-voice'
+      config:
+        enabled: true
+        exemplars: 5
+        minMessages: 30
+        maxChars: 700
+        order: 915

@@ -1,0 +1,24 @@
+{
+  "name": "dsh-fish-voice",
+  "version": "0.1.0",
+  "description": "从真人的聊天记录里学他说话：统计句长/起句/口头语/标点习惯，把画像+原话样本注入系统提示。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "dsh-plugin.json",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": ["dsh", "dsh-plugin", "style", "persona", "humanness"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "scripts": { "test": "node --test" },
+  "os": ["linux", "darwin", "win32"],
+  "license": "MIT"
+}
