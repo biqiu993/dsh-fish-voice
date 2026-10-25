@@ -72,7 +72,7 @@ fish_voice_add({ text: "今天下班有点晚" })
 
 ### 如果你用 QQ 桥接
 
-在收到主人私聊消息的地方加一段（示意）：
+在收到私聊消息的地方加一段（示意）：
 
 ```js
 const dir = path.join(process.env.DSH_HOME || path.join(os.homedir(), '.dsh'), 'fish-voice')
@@ -84,7 +84,7 @@ fs.appendFileSync(
 )
 ```
 
-注意只收**主人自己说的话**，不要收模型回复，也不要收群友的话——画像会被污染。
+注意只收**自己说的话**，不要收模型回复，也不要收群友的话——画像会被污染。
 
 ---
 
